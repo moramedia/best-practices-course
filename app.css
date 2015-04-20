@@ -1,0 +1,49 @@
+/* app.css */
+
+body {
+    position: relative;
+    font: 12pt/14pt sans-serif;
+}
+
+#main-content {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.task-list {
+    list-style: decimal;
+    margin: 0;
+    width: 200px;
+}
+
+.task {
+    text-decoration: none;
+    cursor: pointer;
+} .task.checked {
+    text-decoration: line-through;
+}
+
+a.delete-task {
+    text-decoration: none;
+    color: black;
+} a.delete-task:after {
+    content: " x";
+} a.delete-task:hover {
+    text-decoration: underline;
+}
+
+.task-list .task {
+    padding: 10px;
+}
+
+.clear:after {
+    clear: both;
+} .float-right {
+    float: right;
+}
